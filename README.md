@@ -19,7 +19,7 @@ We will welcome contributions from the community to improve the node's functiona
 
 ## License
 
-This project is licensed under the MIT license. Feel free to review the license terms and contribute to the repository.
+This project is based on https://github.com/ethereum/go-ethereum. All additions made by the De Layer team are licensed on GNU GPL 3.0. Feel free to review the license terms and contribute to the repository.
 
 ---
 
