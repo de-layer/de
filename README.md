@@ -6,6 +6,27 @@ Welcome to the official repository for the De Layer node. This repository will h
 
 The "de" node is engineered to support the functionalities of the De Layer subnet, ensuring reliable communication, data integrity, and consistent uptime within the network. 
 
+Right now, the repository contains an execution client for De Layer, allowing for the synchronization and independent verification of blockchain state. Work is underway to release a consensus client, that will allow two-way communication with Bittensor.
+
+## Running
+
+As with [go-ethereum](https://github.com/ethereum/go-ethereum), building the De Layer execution client requires go v1.21 or later and a C compiler.
+
+To build the node, run:
+
+```bash
+make geth
+```
+
+To connect your node to the network, run:
+
+```bash
+mkdir chain-data
+./build/bin/geth --datadir chain-data --daozang
+```
+
+The client should automatically connect to Daozang and start downloading blocks from bootnodes.
+
 ## Features
 
 - **Full Node Capabilities:** The repository will include all necessary components to set up and run a full node on the De Layer subnet, enabling complete synchronization with the network and the ability to process, mine, and validate transactions.
@@ -19,7 +40,7 @@ We will welcome contributions from the community to improve the node's functiona
 
 ## License
 
-This project is based on https://github.com/ethereum/go-ethereum. All additions made by the De Layer team are licensed on GNU GPL 3.0. Feel free to review the license terms and contribute to the repository.
+This project is based on https://github.com/ethereum/go-ethereum. All additions made by the De Layer team are licensed with GNU GPL 3.0. Feel free to review the license terms and contribute to the repository.
 
 ---
 
